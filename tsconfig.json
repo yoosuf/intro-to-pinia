@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "incremental": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Aliases & Type Definitions */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "types": ["node", "vue", "webpack-env", "jest"],
+    "tsBuildInfoFile": "./buildcache/tsbuildinfo"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.d.ts",
+    "src/assets/*.svg",
+    "src/**/*.css"
+  ]
+}
